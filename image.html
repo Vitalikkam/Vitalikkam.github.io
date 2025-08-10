@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Search Image</title>
         <link rel="stylesheet" href="search.css">
     </head>
-    <body style="background-color: rgb(32, 30, 30);">
+    <body style="background-color: #202124;">
         <div id="links">
-            <a href="index.html">Google Search</a>
-            <a href="advanced_search.html">Google Advanced Search</a>
+            <div><a href="index.html">Google Search</a>
+            </div>
+            <div><a href="advanced_search.html">Google Advanced Search</a>
+            </div>
         </div>
         
         <h1 id="header">Google</h1>
+        <h5 id="subheader">Images</h5>
 
-        <form class="search-form" action="https://google.com/search">
-            <input id="search-box" type="text" name="q">
-            <input id="search-button" type="submit" value="Google Search">
+        <form class="search-form" action="https://www.google.com/search">
+            <input type="hidden" name="tbm" value="isch">
+            <input id="search-box" type="text" name="q" placeholder="Search Images">
+            <input id="search-button" type="submit" value="Google Image Search">
         </form>
-        <button id="lucky" onclick="window.location.href='https://doodles.google/'">I'm Feeling Lucky</button>
-    </body>
 </html>

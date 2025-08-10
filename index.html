@@ -6,7 +6,7 @@
     </head>
     <body style="background-color: rgb(32, 30, 30);">
         <div id="links">
-            <div><a href="image_search.html">Google Image Search</a>
+            <div><a href="image.html">Google Image Search</a>
             </div>
             <div><a href="advanced_search.html">Google Advanced Search</a>
             </div>
@@ -14,10 +14,12 @@
         
         <h1 id="header">Google</h1>
 
-        <form class="search-form" action="https://google.com/search">
-            <input id="search-box" type="text" name="q">
+    <form class="search-form" action="https://google.com/search">
+        <input id="search-box" type="text" name="q">
+        <div class="button-row">
             <input id="search-button" type="submit" value="Google Search">
-        </form>
-        <button id="lucky" onclick="window.location.href='https://doodles.google/'">I'm Feeling Lucky</button>
+            <button id="lucky" type="button" onclick="window.location.href='https://doodles.google/'">I'm Feeling Lucky</button>
+        </div>
+    </form>
     </body>
 </html>
